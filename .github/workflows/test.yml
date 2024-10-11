@@ -15,8 +15,7 @@ jobs:
         with:
           tags: myimage:latest
           outputs: type=docker,dest=/tmp/myimage.tar
-          build-args: |
-            IMAGE_ID="gcr.io/fotokite-asix/core-database-api:latest"
+          #build-args: |
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
